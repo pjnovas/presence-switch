@@ -1,0 +1,19 @@
+// RENAME THIS FILE INTO config.h AND SET YOUR SETTINGS
+
+// #define DEBUG              // Uncomment for arduino serial monitor
+
+#define WIFI_SSID             "[SSID]"
+#define WIFI_PASSWORD         "[PASSWORD]"
+
+#define IFTT_ORIGIN           "http://maker.ifttt.com"
+#define IFTT_KEY              "KEY"
+#define IFTT_EVENT_OFF        "an_event_name_off"
+#define IFTT_EVENT_ON         "an_event_name_on"
+
+#define PIN_TRIGGER           D7
+#define PIN_ECHO              D6
+
+#define BUFFER_READS          10
+#define NO_PRESENCE_READS     8     // (MIN 1 - MAX: BUFFER_READS) keep it high so it will turn on faster than off
+#define READ_INTERVAL         1000  // milliseconds
+#define NO_PRESENCE_DISTANCE  115   // centimeters
